@@ -1,0 +1,154 @@
+/* Utility CLasses */
+.btn{
+    margin-top: 10px;
+    padding: 5px 5px;
+    font-size: 0.5rem;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    color: green;
+    background-color: white;
+    /* font-weight: bolder; */
+}
+
+.heading-primary{
+    padding: 10px;
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 12px #350202;
+}
+
+.heading-secondary{
+    padding: 10px;
+    font-size: 0.9rem;
+    text-shadow: 1px 1px 12px #350202;
+}
+
+.paragraph{
+    font-size: 0.7rem;
+}
+
+
+
+/* Navigation-Section */
+
+#navbar{
+    flex-direction: column;
+    justify-content: center;
+    position: sticky;
+}
+
+#navigation{}
+
+#navigation li a{
+    font-size: 0.9rem;
+    margin: 0px 1px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 8px;
+    border-radius: 10px;
+}
+
+#navigation li a:hover{
+    color: red;
+    background: none;
+}
+
+/* Home-Section */
+
+#home{
+    height: 370px;
+    padding: 0px 30px;
+}
+
+#home::before{
+    height: 480px;
+}
+
+#home h1{}
+
+#home p{}
+
+#btn{
+    margin-top: 40px;
+}
+
+
+/* Service-section */
+
+#services{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.box{
+    margin: 14px;
+    padding: 16px;
+    background-color: #e6e6e6;
+}
+
+.box img{
+    height: 65px;
+}
+
+.box h2{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+/* Client-section */
+
+#clients{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-item{
+    padding: 10px;
+}
+
+#clients img{
+    width: 40px;
+    height: auto;
+}
+/* Contact-section */
+
+.contact-box form{
+    width: 30%;
+} 
+
+.form-group label{
+    font-size: 0.75rem;
+}
+
+.form-group{
+    margin: 18px 0px;
+}
+
+.form-group input{
+    padding: 0.5rem;
+    font-size: 0.6rem;
+}
+
+.form-group textarea{
+    padding: 0.5rem;
+    font-size: 0.6rem;
+}
+
+.btn1 button{
+    
+    margin: 3px 0px;
+}
+
+/* Footer-Section */
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    height: 60px;
+}
+

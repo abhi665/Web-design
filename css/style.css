@@ -1,0 +1,301 @@
+/* Css Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* Css variables */
+
+:root{
+    --navbar-height: 70px;
+}
+
+/* Utility Classes */
+
+.center{
+    text-align: center;
+}
+
+.btn{
+    margin-top: 47px;
+    padding: 10px 30px;
+    border: 2px solid white;
+    color: red;
+    color: white;
+    background-color: #350202;
+    /* background-color: black; */
+    font-size: 1.5rem;
+    border-radius: 15px;
+    outline-style: none;
+    cursor: pointer;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    
+}
+
+.btn:hover{
+    color: green;
+    background-color: white;
+    font-weight: bolder;
+}
+
+.heading-primary{
+    padding: 20px;
+    font-size: 4.5rem;
+    font-family: 'Pacifico', cursive;
+    color: #350202;
+    text-shadow: 2px 2px 25px #350202;
+}
+
+.heading-secondary{
+    padding: 20px;
+    font-size: 2.5rem;
+    font-family: 'Pacifico', cursive;
+    color: #350202;
+    text-shadow: 2px 2px 25px #350202;
+}
+
+.paragraph{
+    font-size: 1.5rem;
+}
+
+
+/* Navigation bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+#navbar::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+/* Navigation bar : logo & image */
+
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    margin: 3px 6px;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+}
+
+
+/* Navigation bar : list styling */
+
+#navigation{
+    display: flex;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+#navigation li{
+    list-style: none;
+}
+
+#navigation li a{
+    color: whitesmoke;
+    display: block;
+    padding: 8px 20px;
+    margin: 0px 7px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+#navigation li a:hover{
+    color: green;
+    background-color: whitesmoke;
+}
+
+
+/* Home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 250px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+}
+
+#home::before{
+    content: "";
+    height: 642px;
+    width: 100%;
+    background: url("../img/bg1.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#home p{
+    /* color: antiquewhite; */
+    text-align: justify;
+}
+
+
+/* Services */
+
+#services{
+    margin: 20px;
+    display: flex;
+}
+.box{
+    margin: 25px 25px;
+    padding: 30px;
+    border: 2px solid red;
+    border-radius: 28px;
+    background-color: #e29f9f;
+
+}
+.box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+
+
+/* Client-Section */
+
+#client-section{
+    position: relative;
+    margin-top: 25px 0px;
+    z-index: 0;
+}
+
+#client-section::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: url("../img/bg.jpg");
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 120px;
+}
+
+
+/* contact-section */
+
+#contact{
+    position: relative;
+    /* z-index: 0; */
+}
+
+#contact::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: url("../img/contact.jpg") no-repeat center center/cover;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+.contact-box form{
+    width: 50%;
+}
+
+.form-group{
+    margin: 35px 0px;
+}
+
+.form-group label{
+    font-size: 1.5rem;
+}
+
+.form-group input{
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: 2px solid green;
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    background: transparent;
+}
+
+.form-group textarea{
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: 2px solid green;
+    border-radius: 10px;
+    outline: none;
+    background: transparent;
+}
+
+.btn1 button{
+    
+    margin: 5px 10px;
+}
+
+
+/* footer-section */
+
+footer{
+    background-color: black;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
